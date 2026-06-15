@@ -10,8 +10,13 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
-    {name = "ahamed faisal"},
+    {name = "ahamed faisal", email = "faisal.offl123@gmail.com"},
 ]
+
+[project.urls]
+Homepage = "https://github.com/ahamedfaisal-dot/fiops"
+Repository = "https://github.com/ahamedfaisal-dot/fiops"
+"Bug Tracker" = "https://github.com/ahamedfaisal-dot/fiops/issues"
 keywords = ["optimization", "complexity", "analysis", "profiler", "python"]
 classifiers = [
     "Development Status :: 3 - Alpha",

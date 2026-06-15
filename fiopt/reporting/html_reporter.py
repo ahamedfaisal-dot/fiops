@@ -1,12 +1,4 @@
-"""HTML report generation for FiOpt analysis.
 
-Generates a standalone, beautiful HTML report with:
-- Embedded CSS (no external dependencies)
-- Function complexity breakdown
-- Issue highlights with suggestions
-- Summary statistics
-- Dark-mode design
-"""
 
 from __future__ import annotations
 
