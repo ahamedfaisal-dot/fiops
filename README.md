@@ -2,6 +2,8 @@
 
 > *"Analyze. Detect. Accelerate."*
 
+Developed by **Ahamed Faisal**
+
 FiOpt is a compiler-inspired static analysis tool for Python that automatically estimates Big-O complexity, detects performance bottlenecks, finds anti-patterns, and suggests optimizations — all without running your code.
 
 ```
