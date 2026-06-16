@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/pypi/pyversions/fiops-complexity?logo=python&logoColor=white" alt="Python Versions" />
   <img src="https://img.shields.io/github/license/ahamedfaisal-dot/fiops?color=blue" alt="License" />
   <img src="https://img.shields.io/github/actions/workflow/status/ahamedfaisal-dot/fiops/publish.yml?label=publish&logo=github" alt="Publish Status" />
-  <img src="https://img.shields.io/badge/Made%20for-Vibe%20Coders%20🎧-blueviolet" alt="Made for Vibe Coders" />
+  <img src="https://img.shields.io/badge/Made%20for-Vibe%20Coders-blueviolet" alt="Made for Vibe Coders" />
 </p>
 
 # FiOpt — AI-Powered Code Complexity & Optimization Engine
@@ -20,7 +20,7 @@ Source Code → Parser → AST → Analysis → Report
 
 ---
 
-## 🎧 Built for Vibe Coders
+## Built for Vibe Coders
 
 FiOpt is **purpose-built for the vibe coding workflow**. If you're a developer who uses AI assistants (ChatGPT, Claude, Copilot, Gemini, Cursor, etc.) to write code, FiOpt is your **quality gate**.
 
@@ -34,7 +34,7 @@ FiOpt analyzes the AI-generated code and produces a **structured report** that y
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  🎧 VIBE CODING LOOP                    │
+│                   VIBE CODING LOOP                      │
 │                                                         │
 │   You ──prompt──▶ AI writes code                        │
 │                      │                                  │
@@ -49,7 +49,7 @@ FiOpt analyzes the AI-generated code and produces a **structured report** that y
 │           Feed report back to AI ◀── "Fix these issues" │
 │                      │                                  │
 │                      ▼                                  │
-│              AI improves code ✅                         │
+│              AI improves code                            │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -109,7 +109,7 @@ You paste this into your AI, and it fixes it:
 
 ```python
 def deduplicate(items):
-    return list(dict.fromkeys(items))  # O(n) ✅
+    return list(dict.fromkeys(items))  # O(n)
 ```
 
 **That's the power of FiOpt + AI. You vibe, FiOpt validates, AI fixes.**
@@ -118,7 +118,7 @@ def deduplicate(items):
 
 ## Table of Contents
 
-- [Built for Vibe Coders](#-built-for-vibe-coders)
+- [Built for Vibe Coders](#built-for-vibe-coders)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -142,15 +142,15 @@ def deduplicate(items):
 
 | Feature | Description |
 |---|---|
-| 🧮 **Big-O Complexity Detection** | Automatically estimates time complexity for every function — O(1), O(log n), O(n), O(n log n), O(n²), O(n³), O(2ⁿ), and more |
-| 🔄 **Loop & Nesting Analysis** | Detects nested loops, unnecessary iterations, and loop-invariant code |
-| 🌀 **Recursion Detection** | Finds recursive functions, missing memoization opportunities, tail-recursion candidates |
-| 🚫 **Anti-Pattern Detection** | List-vs-set misuse, string concatenation in loops, sorting inside loops, poor data structure choices |
-| 💀 **Dead Code Detection** | Unreachable code, unused variables, uncalled functions |
-| 📊 **Rich Reports** | Beautiful terminal output (via Rich), standalone HTML reports, machine-readable JSON |
-| 🎧 **Vibe-Coder Friendly** | JSON/terminal output designed to be pasted directly into AI assistants for auto-fixing |
-| ⚡ **Zero Runtime Needed** | Pure static analysis — no code execution, no side effects, no dependencies on your project |
-| 🔌 **CI/CD Ready** | Exit codes and JSON output for automated quality gates in pipelines |
+| **Big-O Complexity Detection** | Automatically estimates time complexity for every function — O(1), O(log n), O(n), O(n log n), O(n²), O(n³), O(2ⁿ), and more |
+| **Loop & Nesting Analysis** | Detects nested loops, unnecessary iterations, and loop-invariant code |
+| **Recursion Detection** | Finds recursive functions, missing memoization opportunities, tail-recursion candidates |
+| **Anti-Pattern Detection** | List-vs-set misuse, string concatenation in loops, sorting inside loops, poor data structure choices |
+| **Dead Code Detection** | Unreachable code, unused variables, uncalled functions |
+| **Rich Reports** | Beautiful terminal output (via Rich), standalone HTML reports, machine-readable JSON |
+| **Vibe-Coder Friendly** | JSON/terminal output designed to be pasted directly into AI assistants for auto-fixing |
+| **Zero Runtime Needed** | Pure static analysis — no code execution, no side effects, no dependencies on your project |
+| **CI/CD Ready** | Exit codes and JSON output for automated quality gates in pipelines |
 
 ---
 
@@ -562,7 +562,7 @@ config = AnalysisConfig(
 
 ## Real-World Workflows
 
-### 🎧 Vibe Coding Quality Gate
+### Vibe Coding Quality Gate
 
 Run FiOpt after every AI-assisted coding session:
 
@@ -578,7 +578,7 @@ Then paste the report into your AI assistant:
 
 > *"Here's the FiOpt analysis of our codebase. Please review and fix any functions flagged as WARNING or CRITICAL. Preserve the existing behavior while improving performance."*
 
-### 🔁 CI/CD Pipeline Integration
+### CI/CD Pipeline Integration
 
 Add FiOpt to your GitHub Actions, GitLab CI, or any CI system:
 
@@ -617,7 +617,7 @@ jobs:
           path: complexity-report.html
 ```
 
-### 🔍 Pre-Commit Hook
+### Pre-Commit Hook
 
 Catch complexity issues before they're committed:
 
@@ -627,13 +627,13 @@ Catch complexity issues before they're committed:
 echo "Running FiOpt complexity check..."
 fiopt analyze . --threshold "O(n²)"
 if [ $? -ne 0 ]; then
-    echo "❌ FiOpt found critical complexity issues. Fix them before committing."
+    echo "FiOpt found critical complexity issues. Fix them before committing."
     exit 1
 fi
-echo "✅ Complexity check passed."
+echo "Complexity check passed."
 ```
 
-### 📓 Jupyter Notebook Integration
+### Jupyter Notebook Integration
 
 Use FiOpt inside notebooks to check cells as you write:
 
@@ -654,7 +654,7 @@ print(report.summary)
 # Immediately see that this is O(n²) and get a suggestion to use a set
 ```
 
-### 🧪 Code Review Assistant
+### Code Review Assistant
 
 Write a script that reviews changed files:
 
@@ -673,7 +673,7 @@ for filepath in changed_files:
     if filepath:
         report = analyze(filepath)
         if report.total_issues > 0:
-            print(f"\n⚠ {filepath}: {report.total_issues} issues found")
+            print(f"\n{filepath}: {report.total_issues} issues found")
             print(f"  Worst complexity: {report.complexity}")
             for suggestion in report.suggestions[:3]:
                 print(f"  → {suggestion}")
@@ -878,6 +878,6 @@ Please also review our [Code of Conduct](CODE_OF_CONDUCT.md).
 ---
 
 <p align="center">
-  <b>FiOpt</b> — Stop shipping slow code. Let the tools catch what you miss. 🚀<br>
-  <sub>Built with ❤️ for the vibe coding community</sub>
+  <b>FiOpt</b> — Stop shipping slow code. Let the tools catch what you miss.<br>
+  <sub>Built for the vibe coding community</sub>
 </p>
