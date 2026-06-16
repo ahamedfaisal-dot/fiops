@@ -12,11 +12,6 @@ requires-python = ">=3.10"
 authors = [
     {name = "ahamed faisal", email = "faisal.offl123@gmail.com"},
 ]
-
-[project.urls]
-Homepage = "https://github.com/ahamedfaisal-dot/fiops"
-Repository = "https://github.com/ahamedfaisal-dot/fiops"
-"Bug Tracker" = "https://github.com/ahamedfaisal-dot/fiops/issues"
 keywords = ["optimization", "complexity", "analysis", "profiler", "python"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -36,6 +31,11 @@ dependencies = [
     "rich>=13.0",
     "jinja2>=3.1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/ahamedfaisal-dot/fiops"
+Repository = "https://github.com/ahamedfaisal-dot/fiops"
+"Bug Tracker" = "https://github.com/ahamedfaisal-dot/fiops/issues"
 
 [project.optional-dependencies]
 dev = [
